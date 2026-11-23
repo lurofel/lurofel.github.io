@@ -1,0 +1,1388 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白丝_原创影像社区|记录真实与温暖的光影力量</title>
+<meta name="description" content="白丝官方网站，专注真实生活影像的原创视频品牌。深耕日常记录与治愈影像垂直领域，为创作者搭建高品质内容生态，值得信赖的影像社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b3550'/%3E%3Cpath d='M18 42 L32 16 L46 42 L32 34 Z' fill='%23e8eef7'/%3E%3Ccircle cx='32' cy='45' r='4' fill='%23e8a04c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bs-ink:#1d2433;
+  --bs-ink-soft:#4a5468;
+  --bs-mist:#f2f4f8;
+  --bs-line:#dde3ec;
+  --bs-blue:#2b3550;
+  --bs-blue-2:#3b4d76;
+  --bs-amber:#e8a04c;
+  --bs-amber-soft:#fdf2e3;
+  --bs-card:#ffffff;
+  --bs-radius:14px;
+  --bs-shadow:0 10px 30px rgba(29,36,51,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans CJK SC",sans-serif;
+  color:var(--bs-ink);
+  background:var(--bs-mist);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.bs-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.bs-anchor{scroll-margin-top:132px}
+
+/* ---------- sticky header (notice + nav) ---------- */
+.bs-sticky-head{position:sticky;top:0;z-index:80}
+.bs-notice{
+  background:var(--bs-blue);
+  color:#e8eef7;
+  font-size:13px;
+  letter-spacing:.4px;
+}
+.bs-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:9px 24px;max-width:1180px;margin:0 auto;
+  overflow:hidden;
+}
+.bs-notice-tag{
+  flex:none;background:var(--bs-amber);color:#2b2436;
+  border-radius:5px;padding:1px 8px;font-size:12px;font-weight:700;
+}
+.bs-notice-track{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bs-notice-more{flex:none;color:var(--bs-amber);font-size:13px}
+.bs-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--bs-line);
+}
+.bs-header-inner{
+  max-width:1180px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:28px;
+}
+.bs-brand{display:flex;align-items:center;gap:10px;flex:none}
+.bs-brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(140deg,var(--bs-blue),var(--bs-blue-2));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;
+  letter-spacing:1px;
+}
+.bs-brand-name{font-size:19px;font-weight:800;letter-spacing:2px}
+.bs-brand-sub{font-size:11px;color:var(--bs-ink-soft);letter-spacing:2px;margin-top:-2px}
+.bs-nav{display:flex;gap:22px;font-size:15px;flex:none}
+.bs-nav a{position:relative;padding:4px 0;color:var(--bs-ink-soft);transition:color .2s}
+.bs-nav a:hover{color:var(--bs-blue)}
+.bs-nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;
+  background:var(--bs-amber);transition:right .25s;
+}
+.bs-nav a:hover::after{right:0}
+.bs-search{flex:1;display:flex;justify-content:flex-end;position:relative;min-width:0}
+.bs-search-box{
+  display:flex;align-items:center;gap:8px;
+  background:var(--bs-mist);border:1px solid var(--bs-line);
+  border-radius:999px;padding:6px 8px 6px 16px;width:100%;max-width:300px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.bs-search-box:focus-within{border-color:var(--bs-blue-2);box-shadow:0 0 0 3px rgba(59,77,118,.12)}
+.bs-search-box input{
+  border:none;background:none;outline:none;flex:1;min-width:0;font-size:14px;color:var(--bs-ink);
+}
+.bs-search-btn{
+  background:var(--bs-blue);color:#fff;border-radius:999px;
+  padding:5px 14px;font-size:13px;flex:none;
+}
+.bs-search-tip{
+  position:absolute;top:calc(100% + 8px);right:0;width:100%;max-width:300px;
+  background:#fff;border:1px solid var(--bs-line);border-radius:12px;
+  box-shadow:var(--bs-shadow);padding:10px 12px;font-size:13px;color:var(--bs-ink-soft);
+  display:none;
+}
+.bs-search-tip.show{display:block}
+.bs-menu-btn{display:none;flex-direction:column;gap:5px;padding:6px}
+.bs-menu-btn span{width:22px;height:2px;background:var(--bs-ink);border-radius:2px;transition:.25s}
+.bs-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--bs-line);padding:8px 24px 16px}
+.bs-mobile-nav.open{display:block}
+.bs-mobile-nav a{display:block;padding:11px 4px;border-bottom:1px dashed var(--bs-line);font-size:15px;color:var(--bs-ink-soft)}
+.bs-mobile-nav a:last-child{border-bottom:none}
+
+/* ---------- hero ---------- */
+.bs-hero{padding:54px 0 64px;background:linear-gradient(180deg,#f7f9fc 0%,var(--bs-mist) 100%)}
+.bs-hero-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center;
+}
+.bs-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  color:var(--bs-blue-2);background:#e7ecf6;border-radius:999px;padding:5px 14px;letter-spacing:1px;
+}
+.bs-hero h1{
+  font-size:clamp(40px,5.4vw,64px);line-height:1.12;letter-spacing:4px;
+  margin:22px 0 8px;font-weight:800;
+}
+.bs-hero h1 em{font-style:normal;color:var(--bs-amber)}
+.bs-hero-slogan{font-size:19px;font-weight:700;letter-spacing:2px;color:var(--bs-blue-2);margin-bottom:18px}
+.bs-hero-desc{font-size:15px;color:var(--bs-ink-soft);max-width:560px}
+.bs-hero-desc strong{color:var(--bs-ink)}
+.bs-hero-stats{display:flex;gap:34px;margin:30px 0 28px;flex-wrap:wrap}
+.bs-stat-num{font-size:28px;font-weight:800;letter-spacing:1px;color:var(--bs-blue)}
+.bs-stat-num small{font-size:14px;font-weight:700;color:var(--bs-amber);margin-left:2px}
+.bs-stat-label{font-size:13px;color:var(--bs-ink-soft);letter-spacing:1px}
+.bs-hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.bs-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:999px;padding:11px 26px;font-size:15px;font-weight:700;
+  transition:transform .2s,box-shadow .2s,background .2s;letter-spacing:1px;
+}
+.bs-btn-primary{background:var(--bs-blue);color:#fff;box-shadow:0 8px 20px rgba(43,53,80,.25)}
+.bs-btn-primary:hover{transform:translateY(-2px);background:var(--bs-blue-2)}
+.bs-btn-ghost{background:#fff;color:var(--bs-blue);border:1.5px solid var(--bs-line)}
+.bs-btn-ghost:hover{border-color:var(--bs-blue-2);transform:translateY(-2px)}
+.bs-hero-visual{position:relative}
+.bs-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(29,36,51,.2);
+  border:6px solid #fff;background:#fff;
+}
+.bs-hero-frame img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+.bs-hero-badge{
+  position:absolute;left:-18px;bottom:24px;background:#fff;border-radius:14px;
+  box-shadow:var(--bs-shadow);padding:12px 18px;display:flex;align-items:center;gap:12px;
+}
+.bs-hero-badge-icon{
+  width:40px;height:40px;border-radius:50%;background:var(--bs-amber-soft);
+  display:grid;place-items:center;color:var(--bs-amber);font-size:18px;
+}
+.bs-hero-badge b{display:block;font-size:15px}
+.bs-hero-badge span{font-size:12px;color:var(--bs-ink-soft)}
+.bs-hero-tag{
+  position:absolute;right:16px;top:16px;background:rgba(29,36,51,.72);color:#fff;
+  font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:1px;backdrop-filter:blur(4px);
+}
+
+/* ---------- section common ---------- */
+.bs-section{padding:64px 0}
+.bs-section.alt{background:#fff}
+.bs-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.bs-section-head h2{font-size:clamp(24px,3vw,32px);letter-spacing:2px;line-height:1.3}
+.bs-section-head h2 span{color:var(--bs-amber)}
+.bs-section-sub{font-size:14px;color:var(--bs-ink-soft);margin-top:8px;max-width:640px}
+.bs-section-link{font-size:14px;color:var(--bs-blue-2);font-weight:700;white-space:nowrap}
+.bs-section-link:hover{color:var(--bs-amber)}
+
+/* ---------- focus ---------- */
+.bs-focus{display:grid;grid-template-columns:.6fr 1fr;gap:36px;align-items:stretch}
+.bs-focus-main{
+  position:relative;border-radius:18px;overflow:hidden;background:var(--bs-blue);
+  box-shadow:var(--bs-shadow);
+}
+.bs-focus-main img{width:100%;height:100%;min-height:320px;object-fit:cover;opacity:.92}
+.bs-focus-overlay{
+  position:absolute;inset:auto 0 0 0;padding:26px;
+  background:linear-gradient(180deg,rgba(29,36,51,0) 0%,rgba(29,36,51,.86) 70%);
+  color:#fff;
+}
+.bs-focus-overlay .bs-chip{background:var(--bs-amber);color:#2b2436}
+.bs-focus-overlay h3{font-size:22px;margin:10px 0 8px;line-height:1.4}
+.bs-focus-overlay p{font-size:13px;color:#d5dcea}
+.bs-chip{
+  display:inline-block;background:#e7ecf6;color:var(--bs-blue-2);
+  font-size:12px;padding:3px 10px;border-radius:5px;font-weight:700;letter-spacing:.5px;
+}
+.bs-focus-list{display:flex;flex-direction:column;gap:0}
+.bs-focus-item{
+  display:grid;grid-template-columns:110px 1fr;gap:18px;
+  padding:18px 0;border-bottom:1px dashed var(--bs-line);
+}
+.bs-focus-item:first-child{padding-top:0}
+.bs-focus-item:last-child{border-bottom:none}
+.bs-focus-thumb{border-radius:10px;overflow:hidden;background:#e7ecf6}
+.bs-focus-thumb img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.bs-focus-item h3{font-size:17px;line-height:1.45;margin-bottom:6px;transition:color .2s}
+.bs-focus-item:hover h3{color:var(--bs-blue-2)}
+.bs-focus-item p{font-size:13px;color:var(--bs-ink-soft)}
+.bs-focus-meta{display:flex;gap:14px;font-size:12px;color:#8994a8;margin-top:8px;flex-wrap:wrap}
+
+/* ---------- video stream cards ---------- */
+.bs-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.bs-video-card{
+  background:var(--bs-card);border-radius:var(--bs-radius);overflow:hidden;
+  border:1px solid var(--bs-line);display:flex;flex-direction:column;
+  transition:transform .25s,box-shadow .25s;
+}
+.bs-video-card:hover{transform:translateY(-5px);box-shadow:var(--bs-shadow)}
+.bs-video-cover{position:relative;overflow:hidden;background:#e7ecf6}
+.bs-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s}
+.bs-video-card:hover .bs-video-cover img{transform:scale(1.05)}
+.bs-video-dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(29,36,51,.78);
+  color:#fff;font-size:12px;padding:2px 8px;border-radius:5px;
+}
+.bs-video-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bs-video-body h3{font-size:17px;line-height:1.45}
+.bs-video-body p{font-size:13px;color:var(--bs-ink-soft);flex:1}
+.bs-video-tags{display:flex;gap:8px;flex-wrap:wrap}
+.bs-video-tags span{font-size:12px;color:var(--bs-blue-2);background:#eef2f8;padding:2px 9px;border-radius:5px}
+.bs-video-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding-top:12px;border-top:1px dashed var(--bs-line);font-size:12px;color:#8994a8;
+}
+.bs-video-author{display:flex;align-items:center;gap:7px;min-width:0}
+.bs-mini-ava{
+  width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11px;font-weight:800;color:#fff;background:var(--bs-blue-2);
+}
+.bs-video-author span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bs-video-actions{display:flex;gap:10px;flex:none}
+.bs-icon-btn{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#8994a8;
+  transition:color .2s;padding:2px;
+}
+.bs-icon-btn:hover{color:var(--bs-blue)}
+.bs-icon-btn.liked{color:#e0576b}
+.bs-icon-btn.saved{color:var(--bs-amber)}
+
+/* ---------- text list videos ---------- */
+.bs-list-videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.bs-list-item{
+  padding:18px 0;border-bottom:1px dashed var(--bs-line);display:flex;gap:16px;align-items:flex-start;
+}
+.bs-list-index{
+  flex:none;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  font-weight:800;font-size:14px;background:#e7ecf6;color:var(--bs-blue-2);
+}
+.bs-list-item:first-child .bs-list-index,
+.bs-list-item:nth-child(2) .bs-list-index{background:var(--bs-blue);color:#fff}
+.bs-list-body{flex:1;min-width:0}
+.bs-list-body h3{font-size:16px;line-height:1.45;margin-bottom:4px}
+.bs-list-body p{font-size:13px;color:var(--bs-ink-soft)}
+.bs-list-meta{font-size:12px;color:#8994a8;margin-top:6px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- features / topics ---------- */
+.bs-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.bs-topic-card{
+  background:#fff;border-radius:var(--bs-radius);border:1px solid var(--bs-line);
+  padding:26px;transition:box-shadow .25s,transform .25s;
+}
+.bs-topic-card:hover{box-shadow:var(--bs-shadow);transform:translateY(-4px)}
+.bs-topic-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:10px}
+.bs-topic-card h3{font-size:20px;letter-spacing:1px}
+.bs-topic-status{font-size:12px;background:var(--bs-amber-soft);color:#a8681c;padding:3px 10px;border-radius:5px;white-space:nowrap;font-weight:700}
+.bs-topic-status.done{background:#e9f1ec;color:#3d7a56}
+.bs-topic-card>p{font-size:13.5px;color:var(--bs-ink-soft);margin-bottom:16px}
+.bs-topic-items li{
+  display:flex;gap:10px;font-size:13.5px;padding:8px 0;border-top:1px dashed var(--bs-line);color:var(--bs-ink-soft);
+}
+.bs-topic-items li b{color:var(--bs-blue-2);font-weight:700;flex:none}
+.bs-topic-figure{border-radius:12px;overflow:hidden;margin-bottom:16px}
+.bs-topic-figure img{width:100%;aspect-ratio:16/7;object-fit:cover}
+
+/* ---------- long read ---------- */
+.bs-read{background:#fff}
+.bs-read-inner{max-width:860px;margin:0 auto}
+.bs-read h2{font-size:clamp(24px,3vw,32px);letter-spacing:2px;margin-bottom:10px}
+.bs-read-lead{font-size:15px;color:var(--bs-ink-soft);margin-bottom:30px;padding-left:16px;border-left:3px solid var(--bs-amber)}
+.bs-read h3{font-size:19px;margin:30px 0 12px;letter-spacing:1px;color:var(--bs-blue)}
+.bs-read p{font-size:15px;color:var(--bs-ink-soft);margin-bottom:14px;text-align:justify}
+.bs-read strong{color:var(--bs-ink)}
+.bs-read-highlight{
+  background:var(--bs-mist);border-radius:12px;padding:18px 22px;margin:22px 0;
+  font-size:14px;color:var(--bs-blue-2);border-left:4px solid var(--bs-blue-2);
+}
+
+/* ---------- authors two-col ---------- */
+.bs-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.bs-author-card{
+  background:#fff;border:1px solid var(--bs-line);border-radius:var(--bs-radius);
+  padding:24px;display:flex;gap:18px;transition:box-shadow .25s;
+}
+.bs-author-card:hover{box-shadow:var(--bs-shadow)}
+.bs-avatar{
+  width:64px;height:64px;border-radius:18px;flex:none;display:grid;place-items:center;
+  font-size:24px;font-weight:800;color:#fff;letter-spacing:1px;
+}
+.bs-author-info{min-width:0;flex:1}
+.bs-author-info h3{font-size:18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.bs-author-field{font-size:12px;background:#eef2f8;color:var(--bs-blue-2);padding:2px 9px;border-radius:5px;font-weight:700}
+.bs-author-info p{font-size:13px;color:var(--bs-ink-soft);margin-top:8px}
+.bs-author-nums{display:flex;gap:20px;font-size:12.5px;color:#8994a8;margin-top:10px}
+.bs-author-nums b{color:var(--bs-ink);font-size:14px}
+.bs-author-link{margin-top:12px;display:inline-block;font-size:13px;font-weight:700;color:var(--bs-blue-2)}
+.bs-author-link:hover{color:var(--bs-amber)}
+
+/* ---------- reviews two-col ---------- */
+.bs-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.bs-review{
+  background:#fff;border:1px solid var(--bs-line);border-radius:var(--bs-radius);
+  padding:22px;position:relative;
+}
+.bs-review::before{
+  content:"“";position:absolute;right:20px;top:8px;font-size:52px;color:#e7ecf6;
+  font-family:Georgia,serif;line-height:1;
+}
+.bs-review-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bs-review-head .bs-mini-ava{width:30px;height:30px;font-size:13px}
+.bs-review-name{font-size:14px;font-weight:700}
+.bs-review-stars{font-size:12px;color:var(--bs-amber);letter-spacing:2px}
+.bs-review p{font-size:13.5px;color:var(--bs-ink-soft);position:relative;z-index:1}
+.bs-review-tag{font-size:12px;color:#8994a8;margin-top:10px}
+
+/* ---------- news + partners ---------- */
+.bs-duo{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+.bs-news li{
+  display:grid;grid-template-columns:92px 1fr;gap:16px;padding:16px 0;border-bottom:1px dashed var(--bs-line);
+}
+.bs-news time{font-size:13px;color:var(--bs-amber);font-weight:700;letter-spacing:.5px}
+.bs-news h3{font-size:16px;line-height:1.5;margin-bottom:4px}
+.bs-news p{font-size:13px;color:var(--bs-ink-soft)}
+.bs-partner-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.bs-partner{
+  background:#fff;border:1px solid var(--bs-line);border-radius:12px;
+  padding:18px 14px;text-align:center;font-size:14px;font-weight:700;color:var(--bs-blue-2);
+  letter-spacing:1px;transition:border-color .2s,transform .2s;
+}
+.bs-partner:hover{border-color:var(--bs-blue-2);transform:translateY(-3px)}
+.bs-partner small{display:block;font-size:11px;color:#8994a8;font-weight:400;margin-top:4px;letter-spacing:0}
+
+/* ---------- faq ---------- */
+.bs-faq{max-width:860px;margin:0 auto}
+.bs-faq details{
+  background:#fff;border:1px solid var(--bs-line);border-radius:12px;
+  margin-bottom:12px;overflow:hidden;
+}
+.bs-faq summary{
+  padding:16px 20px;font-size:15px;font-weight:700;cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.bs-faq summary::-webkit-details-marker{display:none}
+.bs-faq summary::after{content:"+";font-size:20px;color:var(--bs-amber);font-weight:400;transition:transform .2s}
+.bs-faq details[open] summary::after{transform:rotate(45deg)}
+.bs-faq details p{padding:0 20px 18px;font-size:13.5px;color:var(--bs-ink-soft)}
+
+/* ---------- footer ---------- */
+.bs-footer{background:var(--bs-blue);color:#c7d0e2;padding:56px 0 0;margin-top:0}
+.bs-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:36px;padding-bottom:40px}
+.bs-footer h4{color:#fff;font-size:15px;margin-bottom:16px;letter-spacing:1px}
+.bs-footer p{font-size:13px;line-height:1.9}
+.bs-footer ul li{font-size:13px;margin-bottom:9px}
+.bs-footer ul li a:hover{color:var(--bs-amber)}
+.bs-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.14);padding:20px 0 26px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8f9cb8;
+}
+.bs-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.bs-footer-brand .bs-brand-mark{background:rgba(255,255,255,.12)}
+.bs-footer-brand b{color:#fff;font-size:17px;letter-spacing:2px}
+
+/* ---------- toast & modal ---------- */
+.bs-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:rgba(29,36,51,.94);color:#fff;font-size:14px;padding:11px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:200;letter-spacing:.5px;
+}
+.bs-toast.show{opacity:1;transform:translate(-50%,0)}
+.bs-modal-mask{
+  position:fixed;inset:0;background:rgba(20,26,38,.55);z-index:150;
+  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+}
+.bs-modal-mask.show{display:flex}
+.bs-modal{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:28px;position:relative;
+  box-shadow:0 30px 70px rgba(0,0,0,.28);max-height:86vh;overflow:auto;
+}
+.bs-modal h3{font-size:20px;margin-bottom:10px}
+.bs-modal p{font-size:14px;color:var(--bs-ink-soft);margin-bottom:14px}
+.bs-modal-close{
+  position:absolute;right:16px;top:12px;font-size:24px;color:#8994a8;line-height:1;padding:4px;
+}
+.bs-modal-close:hover{color:var(--bs-ink)}
+.bs-modal .bs-field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.bs-modal .bs-field label{font-size:13px;font-weight:700}
+.bs-modal .bs-field input,.bs-modal .bs-field textarea{
+  border:1px solid var(--bs-line);border-radius:9px;padding:9px 12px;font-size:14px;
+  font-family:inherit;outline:none;resize:vertical;
+}
+.bs-modal .bs-field input:focus,.bs-modal .bs-field textarea:focus{border-color:var(--bs-blue-2)}
+.bs-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.bs-share-row button{
+  background:var(--bs-mist);border-radius:9px;padding:9px 16px;font-size:13px;font-weight:700;color:var(--bs-blue-2);
+}
+.bs-share-row button:hover{background:#e7ecf6}
+
+/* ---------- back to top ---------- */
+.bs-top-btn{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:var(--bs-blue);color:#fff;font-size:19px;display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(43,53,80,.32);opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;z-index:90;
+}
+.bs-top-btn.show{opacity:1;pointer-events:auto}
+.bs-top-btn:hover{transform:translateY(-3px)}
+
+/* ---------- responsive ---------- */
+@media(max-width:1024px){
+  .bs-hero-grid{grid-template-columns:1fr;gap:36px}
+  .bs-hero-badge{left:12px}
+  .bs-focus{grid-template-columns:1fr}
+  .bs-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bs-duo{grid-template-columns:1fr;gap:36px}
+  .bs-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  .bs-nav,.bs-search{display:none}
+  .bs-menu-btn{display:flex;margin-left:auto}
+  .bs-topic-grid,.bs-author-grid,.bs-review-grid,.bs-list-videos{grid-template-columns:1fr}
+  .bs-hero{padding:38px 0 46px}
+  .bs-notice-inner{padding:8px 18px}
+  .bs-header-inner{padding:12px 18px;gap:14px}
+  .bs-wrap{padding:0 18px}
+  .bs-section{padding:48px 0}
+}
+@media(max-width:560px){
+  .bs-video-grid{grid-template-columns:1fr}
+  .bs-footer-grid{grid-template-columns:1fr}
+  .bs-hero-stats{gap:22px}
+  .bs-focus-item{grid-template-columns:88px 1fr;gap:12px}
+  .bs-news li{grid-template-columns:1fr;gap:4px}
+  .bs-author-card{flex-direction:column}
+  .bs-hero h1{letter-spacing:2px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ================= S1 公告条 + 页头 ================= -->
+<div class="bs-sticky-head" id="bsTop">
+  <div class="bs-notice">
+    <div class="bs-notice-inner">
+      <span class="bs-notice-tag">官方发布</span>
+      <div class="bs-notice-track" id="bsNoticeTrack">白丝秋季影像企划《一日之丝》第 6 集上线 · 新增 12 位签约创作者 · 「深夜书房」系列开放投稿 · 社区口碑评分系统 2.0 更新</div>
+      <a class="bs-notice-more" href="#bsNews">查看全部 ›</a>
+    </div>
+  </div>
+
+  <header class="bs-header">
+    <div class="bs-header-inner">
+      <a class="bs-brand" href="#bsTop" aria-label="白丝官方网站首页">
+        <span class="bs-brand-mark">丝</span>
+        <span>
+          <span class="bs-brand-name">白丝</span>
+          <span class="bs-brand-sub">WHITESILK · 影像社区</span>
+        </span>
+      </a>
+      <nav class="bs-nav" aria-label="主导航">
+        <a href="#bsFocus">焦点</a>
+        <a href="#bsVideos">影像</a>
+        <a href="#bsTopics">企划</a>
+        <a href="#bsAuthors">创作者</a>
+        <a href="#bsReviews">口碑</a>
+        <a href="#bsNews">动态</a>
+        <a href="#bsFaq">帮助</a>
+      </nav>
+      <div class="bs-search">
+        <form class="bs-search-box" id="bsSearchForm" role="search" onsubmit="return false;">
+          <input type="search" id="bsSearchInput" placeholder="搜索白丝影像、创作者或企划" aria-label="站内搜索">
+          <button class="bs-search-btn" type="submit">搜索</button>
+        </form>
+        <div class="bs-search-tip" id="bsSearchTip"></div>
+      </div>
+      <button class="bs-menu-btn" id="bsMenuBtn" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="bs-mobile-nav" id="bsMobileNav" aria-label="移动端导航">
+      <a href="#bsFocus">焦点内容</a>
+      <a href="#bsVideos">影像精选</a>
+      <a href="#bsTopics">专题企划</a>
+      <a href="#bsAuthors">创作者矩阵</a>
+      <a href="#bsReviews">社区口碑</a>
+      <a href="#bsNews">企业动态</a>
+      <a href="#bsFaq">帮助中心</a>
+    </nav>
+  </header>
+</div>
+
+<!-- ================= S2 品牌首屏 ================= -->
+<section class="bs-hero" aria-labelledby="bsHeroTitle">
+  <div class="bs-wrap bs-hero-grid">
+    <div class="bs-hero-copy">
+      <span class="bs-hero-kicker">白丝 · 官方网站</span>
+      <h1 id="bsHeroTitle">白丝</h1>
+      <p class="bs-hero-slogan">记录真实的光，做有温度的影像社区</p>
+      <p class="bs-hero-desc">
+        白丝是一家专注<strong>真实生活影像与治愈系原创内容</strong>的视频品牌。作为<strong>官方网站</strong>，我们围绕日常记录、创作幕后与人物访谈持续产出高清精品内容，为创作者与企业搭建高品质内容生态。品牌深耕影像垂直领域，以匠心打磨每一帧画面，让平凡的瞬间拥有被看见的力量，也让社区里的每一次分享都值得信赖。
+      </p>
+      <div class="bs-hero-stats">
+        <div>
+          <div class="bs-stat-num">3,860<small>+</small></div>
+          <div class="bs-stat-label">原创影像作品</div>
+        </div>
+        <div>
+          <div class="bs-stat-num">1,240<small>+</small></div>
+          <div class="bs-stat-label">签约创作者</div>
+        </div>
+        <div>
+          <div class="bs-stat-num">98.2<small>%</small></div>
+          <div class="bs-stat-label">社区口碑满意度</div>
+        </div>
+      </div>
+      <div class="bs-hero-btns">
+        <a class="bs-btn bs-btn-primary" href="#bsVideos">观看精选影像</a>
+        <a class="bs-btn bs-btn-ghost" href="#bsAuthors">认识创作者</a>
+        <a class="bs-btn bs-btn-ghost" href="#bsTopics">了解品牌企划</a>
+      </div>
+    </div>
+    <div class="bs-hero-visual">
+      <div class="bs-hero-frame">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 520'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b3550'/%3E%3Cstop offset='1' stop-color='%2342557d'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d9a6'/%3E%3Cstop offset='1' stop-color='%23e8a04c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='520' fill='url(%23bg)'/%3E%3Ccircle cx='470' cy='150' r='108' fill='url(%23glow)' opacity='.85'/%3E%3Ccircle cx='470' cy='150' r='150' fill='none' stroke='%23e8eef7' stroke-opacity='.22' stroke-width='2'/%3E%3Ccircle cx='470' cy='150' r='196' fill='none' stroke='%23e8eef7' stroke-opacity='.1' stroke-width='1.5'/%3E%3Cpath d='M0 400 L150 300 L260 360 L380 250 L520 330 L640 260 L640 520 L0 520 Z' fill='%231d2433' opacity='.65'/%3E%3Cpath d='M0 450 L130 380 L280 430 L430 350 L570 420 L640 390 L640 520 L0 520 Z' fill='%23151b28' opacity='.8'/%3E%3Crect x='96' y='286' width='8' height='120' rx='4' fill='%23e8eef7' opacity='.8'/%3E%3Crect x='124' y='316' width='8' height='90' rx='4' fill='%23e8eef7' opacity='.55'/%3E%3Crect x='152' y='342' width='8' height='64' rx='4' fill='%23e8eef7' opacity='.35'/%3E%3Cpath d='M420 372 l24 44 h-48 z' fill='%23e8a04c' opacity='.9'/%3E%3C/svg%3E" alt="白丝品牌主视觉：暮色中的山脊剪影与暖色光晕" width="640" height="520">
+      </div>
+      <span class="bs-hero-tag">4K 高清 · 原创正版</span>
+      <div class="bs-hero-badge">
+        <div class="bs-hero-badge-icon">◈</div>
+        <div>
+          <b>本周更新 38 条</b>
+          <span>精品内容持续运营中</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S3 焦点内容 ================= -->
+<section class="bs-section alt" id="bsFocus" aria-labelledby="bsFocusTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsFocusTitle">焦点推荐 <span>· 白丝本周主打</span></h2>
+        <p class="bs-section-sub">由编辑团队与社区共同票选，聚焦真实、温暖、有力量的影像表达。每个焦点作品都来自白丝创作者的一线记录。</p>
+      </div>
+      <a class="bs-section-link" href="#bsVideos">全部影像 ›</a>
+    </div>
+
+    <div class="bs-focus">
+      <article class="bs-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 620'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8eef7'/%3E%3Cstop offset='1' stop-color='%23b9c7de'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='560' height='620' fill='url(%23a)'/%3E%3Crect x='58' y='80' width='444' height='300' rx='14' fill='%232b3550'/%3E%3Crect x='78' y='100' width='404' height='260' rx='8' fill='%23f7f9fc'/%3E%3Cpath d='M110 320 L200 200 L280 280 L360 170 L450 320 Z' fill='%23b9c7de'/%3E%3Ccircle cx='150' cy='170' r='28' fill='%23e8a04c'/%3E%3Crect x='58' y='404' width='200' height='16' rx='8' fill='%232b3550' opacity='.8'/%3E%3Crect x='58' y='432' width='300' height='12' rx='6' fill='%232b3550' opacity='.4'/%3E%3Crect x='58' y='456' width='260' height='12' rx='6' fill='%232b3550' opacity='.28'/%3E%3Crect x='58' y='500' width='112' height='34' rx='17' fill='%23e8a04c'/%3E%3Crect x='186' y='500' width='112' height='34' rx='17' fill='%232b3550' opacity='.7'/%3E%3C/svg%3E" alt="焦点作品《一日之丝》第6集封面：白墙展台上的风景相框与暖色圆形" width="560" height="620">
+        <div class="bs-focus-overlay">
+          <span class="bs-chip">本周焦点</span>
+          <h3>一日之丝 · 第 6 集：把傍晚留给一条无人的老街</h3>
+          <p>白丝影像实验室出品 · 21:36 · 4K 高清 · 已获 18.4 万次播放</p>
+        </div>
+      </article>
+
+      <div class="bs-focus-list">
+        <article class="bs-focus-item">
+          <div class="bs-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 150'%3E%3Crect width='220' height='150' fill='%23fdf2e3'/%3E%3Ccircle cx='168' cy='44' r='26' fill='%23e8a04c' opacity='.85'/%3E%3Cpath d='M0 110 L60 76 L112 100 L166 64 L220 96 L220 150 L0 150 Z' fill='%232b3550' opacity='.75'/%3E%3Crect x='16' y='18' width='58' height='10' rx='5' fill='%232b3550' opacity='.45'/%3E%3Crect x='16' y='36' width='38' height='8' rx='4' fill='%232b3550' opacity='.28'/%3E%3C/svg%3E" alt="《凌晨四点的面包房》缩略图：暖色晨光与层叠山形剪影" width="220" height="150">
+          </div>
+          <div class="bs-focus-body">
+            <h3>凌晨四点的面包房：一个烘焙师的 3000 个清晨</h3>
+            <p>跟拍白丝社区创作者「麦野」连续七天，记录面团醒发、炉温与城市苏醒之间的默契。</p>
+            <div class="bs-focus-meta"><span>人物访谈</span><span>12.6 万播放</span><span>收藏 2,481</span></div>
+          </div>
+        </article>
+
+        <article class="bs-focus-item">
+          <div class="bs-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 150'%3E%3Crect width='220' height='150' fill='%232b3550'/%3E%3Crect x='14' y='100' width='192' height='34' fill='%231d2433'/%3E%3Ccircle cx='64' cy='60' r='30' fill='%23e8eef7' opacity='.9'/%3E%3Cpath d='M96 60 h52 M148 60 l-14 -12 M148 60 l-14 12' stroke='%23e8a04c' stroke-width='5' fill='none'/%3E%3Crect x='14' y='18' width='70' height='9' rx='4' fill='%23e8eef7' opacity='.7'/%3E%3C/svg%3E" alt="《从一镜到底说起》缩略图：深蓝背景上的箭头与圆形图形" width="220" height="150">
+          </div>
+          <div class="bs-focus-body">
+            <h3>从一镜到底说起：手机也能拍出电影感的 7 个习惯</h3>
+            <p>白丝影像学院教程干货，讲清运镜、构图与自然光判断，适合零基础创作者上手。</p>
+            <div class="bs-focus-meta"><span>教程干货</span><span>9.8 万播放</span><span>收藏 5,120</span></div>
+          </div>
+        </article>
+
+        <article class="bs-focus-item">
+          <div class="bs-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 150'%3E%3Crect width='220' height='150' fill='%23e7ecf6'/%3E%3Crect x='24' y='60' width='172' height='12' rx='6' fill='%232b3550' opacity='.7'/%3E%3Crect x='24' y='84' width='120' height='10' rx='5' fill='%232b3550' opacity='.4'/%3E%3Ccircle cx='176' cy='38' r='20' fill='%233b4d76'/%3E%3Cpath d='M166 38 h20 M176 28 v20' stroke='%23fdf2e3' stroke-width='4'/%3E%3Crect x='24' y='24' width='90' height='14' rx='7' fill='%233b4d76' opacity='.5'/%3E%3C/svg%3E" alt="《深夜书房》缩略图：浅蓝底色上的书页横线与加号图标" width="220" height="150">
+          </div>
+          <div class="bs-focus-body">
+            <h3>深夜书房 Vol.09：读到一半被合上的那本书</h3>
+            <p>白丝读书类治愈影像，用固定机位记录翻页、台灯与窗外车流，安静得刚刚好。</p>
+            <div class="bs-focus-meta"><span>治愈影像</span><span>7.4 万播放</span><span>收藏 1,860</span></div>
+          </div>
+        </article>
+
+        <article class="bs-focus-item">
+          <div class="bs-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 150'%3E%3Crect width='220' height='150' fill='%23f2f4f8'/%3E%3Cpath d='M0 118 L48 86 L96 108 L150 72 L220 112 L220 150 L0 150 Z' fill='%233b4d76' opacity='.5'/%3E%3Ccircle cx='176' cy='40' r='22' fill='%23e8a04c'/%3E%3Crect x='16' y='20' width='62' height='9' rx='4' fill='%232b3550' opacity='.5'/%3E%3Crect x='16' y='38' width='42' height='8' rx='4' fill='%232b3550' opacity='.3'/%3E%3C/svg%3E" alt="《城市慢行记》缩略图：浅灰底色上的丘陵剪影与落日圆点" width="220" height="150">
+          </div>
+          <div class="bs-focus-body">
+            <h3>城市慢行记：坐完一整条公交线的 3 小时</h3>
+            <p>不剪辑、不配乐，只保留环境声与站名播报，白丝社区票选「最想重看」的一集。</p>
+            <div class="bs-focus-meta"><span>城市探索</span><span>11.2 万播放</span><span>收藏 3,204</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S3 视频内容：三列卡片 + 文字列表 ================= -->
+<section class="bs-section" id="bsVideos" aria-labelledby="bsVideosTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsVideosTitle">影像精选 <span>· 白丝热播</span></h2>
+        <p class="bs-section-sub">白丝平台持续运营的精品内容池，覆盖日常记录、教程干货、人物访谈与治愈影像，全部为原创正版高清作品。</p>
+      </div>
+      <a class="bs-section-link" href="#bsTopics">进入专题企划 ›</a>
+    </div>
+
+    <div class="bs-video-grid">
+      <article class="bs-video-card">
+        <div class="bs-video-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d9a6'/%3E%3Cstop offset='1' stop-color='%23d98f3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v1)'/%3E%3Crect x='46' y='150' width='388' height='74' rx='10' fill='%232b3550'/%3E%3Ccircle cx='120' cy='118' r='40' fill='%23fdf2e3' opacity='.9'/%3E%3Crect x='186' y='90' width='180' height='12' rx='6' fill='%23fdf2e3' opacity='.9'/%3E%3Crect x='186' y='114' width='128' height='10' rx='5' fill='%23fdf2e3' opacity='.6'/%3E%3Cpath d='M356 166 l26 20 -26 20 z' fill='%23fdf2e3'/%3E%3C/svg%3E" alt="《面粉与晨光》视频封面：暖橙背景上的圆形与播放三角" width="480" height="270">
+          <span class="bs-video-dur">18:42</span>
+        </div>
+        <div class="bs-video-body">
+          <h3>面粉与晨光：一双手的二十年</h3>
+          <p>白丝人物访谈第二季，走进社区里最老的手工面坊，听老师傅讲揉面、醒面与守店的故事。</p>
+          <div class="bs-video-tags"><span>人物访谈</span><span>匠心</span></div>
+          <div class="bs-video-foot">
+            <div class="bs-video-author"><span class="bs-mini-ava" style="background:#d98f3a">麦</span><span>麦野</span></div>
+            <div class="bs-video-actions">
+              <button class="bs-icon-btn bs-like-btn" data-count="2481" aria-label="点赞">♥ <span>2481</span></button>
+              <button class="bs-icon-btn bs-save-btn" aria-label="收藏">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bs-video-card">
+        <div class="bs-video-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232b3550'/%3E%3Cg stroke='%23e8eef7' stroke-opacity='.55' stroke-width='2'%3E%3Cpath d='M0 60 h480 M0 120 h480 M0 180 h480 M0 240 h480'/%3E%3Cpath d='M80 0 v270 M160 0 v270 M240 0 v270 M320 0 v270 M400 0 v270'/%3E%3C/g%3E%3Crect x='120' y='70' width='140' height='90' rx='6' fill='%23e8a04c' opacity='.85'/%3E%3Ccircle cx='332' cy='176' r='34' fill='%23e8eef7' opacity='.75'/%3E%3Crect x='300' y='40' width='120' height='10' rx='5' fill='%23e8eef7' opacity='.8'/%3E%3C/svg%3E" alt="《构图三问》视频封面：深蓝网格上的橙色取景框" width="480" height="270">
+          <span class="bs-video-dur">22:15</span>
+        </div>
+        <div class="bs-video-body">
+          <h3>构图三问：画面为什么好看，为什么不好看</h3>
+          <p>白丝影像学院系统课第一讲，用 12 组实拍对照拆解主体、留白与视线路径，干货密度极高。</p>
+          <div class="bs-video-tags"><span>教程干货</span><span>影像学院</span></div>
+          <div class="bs-video-foot">
+            <div class="bs-video-author"><span class="bs-mini-ava" style="background:#3b4d76">镜</span><span>镜台笔记</span></div>
+            <div class="bs-video-actions">
+              <button class="bs-icon-btn bs-like-btn" data-count="5120" aria-label="点赞">♥ <span>5120</span></button>
+              <button class="bs-icon-btn bs-save-btn" aria-label="收藏">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bs-video-card">
+        <div class="bs-video-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e7ecf6'/%3E%3Crect x='0' y='196' width='480' height='74' fill='%23b9c7de'/%3E%3Ccircle cx='384' cy='70' r='40' fill='%23e8a04c' opacity='.8'/%3E%3Cpath d='M0 196 L110 132 L210 172 L320 112 L430 160 L480 140 L480 196 Z' fill='%232b3550' opacity='.55'/%3E%3Crect x='28' y='24' width='96' height='12' rx='6' fill='%232b3550' opacity='.4'/%3E%3Crect x='28' y='48' width='64' height='10' rx='5' fill='%232b3550' opacity='.25'/%3E%3C/svg%3E" alt="《去山里住两天》视频封面：浅蓝天空下的深色山脊与落日" width="480" height="270">
+          <span class="bs-video-dur">14:08</span>
+        </div>
+        <div class="bs-video-body">
+          <h3>去山里住两天：没有信号的 48 小时</h3>
+          <p>白丝户外影像企划，记录溪边扎营、捡柴做饭与夜里听风的过程，画面干净、节奏舒缓。</p>
+          <div class="bs-video-tags"><span>户外活动</span><span>治愈影像</span></div>
+          <div class="bs-video-foot">
+            <div class="bs-video-author"><span class="bs-mini-ava" style="background:#4f8a72">林</span><span>林间放映室</span></div>
+            <div class="bs-video-actions">
+              <button class="bs-icon-btn bs-like-btn" data-count="3204" aria-label="点赞">♥ <span>3204</span></button>
+              <button class="bs-icon-btn bs-save-btn" aria-label="收藏">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="bs-list-videos" style="margin-top:36px">
+      <article class="bs-list-item">
+        <span class="bs-list-index">04</span>
+        <div class="bs-list-body">
+          <h3>旧衣改造日记：把爸爸的衬衫做成两件小包</h3>
+          <p>手作 DIY 系列，含裁片图、缝纫机参数与失败复盘，白丝社区「最实用教程」月度提名。</p>
+          <div class="bs-list-meta"><span>针脚与线</span><span>6.9 万播放</span><span>收藏 2,110</span></div>
+        </div>
+      </article>
+      <article class="bs-list-item">
+        <span class="bs-list-index">05</span>
+        <div class="bs-list-body">
+          <h3>凌晨的便利店：夜班店员和 37 位陌生顾客</h3>
+          <p>白丝深度观察企划，固定机位拍下城市夜归人的购买选择，旁白克制、细节动人。</p>
+          <div class="bs-list-meta"><span>城市探索</span><span>10.5 万播放</span><span>收藏 1,942</span></div>
+        </div>
+      </article>
+      <article class="bs-list-item">
+        <span class="bs-list-index">06</span>
+        <div class="bs-list-body">
+          <h3>给妈妈拍一支不摆拍的生日片</h3>
+          <p>亲子成长方向，讲清如何用自然光与生活场景记录家人，附拍摄清单与后期思路。</p>
+          <div class="bs-list-meta"><span>日常记录</span><span>8.7 万播放</span><span>收藏 3,006</span></div>
+        </div>
+      </article>
+      <article class="bs-list-item">
+        <span class="bs-list-index">07</span>
+        <div class="bs-list-body">
+          <h3>声音才是主角：为一条巷子做 8 轨录音</h3>
+          <p>创作幕后，展示收音设备、现场拾音与混音流程，白丝独家幕后素材首次公开。</p>
+          <div class="bs-list-meta"><span>创作幕后</span><span>5.2 万播放</span><span>收藏 1,388</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 深度解析（关键词解析 800 字以上） ================= -->
+<section class="bs-section bs-read" id="bsAbout" aria-labelledby="bsAboutTitle">
+  <div class="bs-wrap bs-read-inner">
+    <h2 id="bsAboutTitle">关于白丝 <span style="color:var(--bs-amber)">·</span> 品牌理念与内容生态解析</h2>
+    <p class="bs-read-lead">白丝不是一个只做播放的视频频道，而是一个把「记录」当作长期事业的原创影像社区。以下从品牌定位、内容方法、社区运营与社会责任四个层面，完整说明白丝为何值得信赖。</p>
+
+    <h3>一、白丝的定位：把日常拍成可被收藏的影像</h3>
+    <p>白丝成立于影像内容刚刚开始普及的年代，最初只有三个人、两台相机和一间不足二十平方米的剪辑室。我们给自己定下的方向非常简单：不去追逐最热的话题，而是把镜头对准那些容易被忽略的普通时刻。清晨菜市场的第一声吆喝、楼道里换鞋的声响、雨天公交站下并排站立的陌生人，这些场景在传统内容工业里往往被当作背景，而白丝把它们当作主角。正是这种坚持，让白丝在竞争激烈的视频行业里形成了清晰辨识度，也让「白丝」成为许多用户心中真实生活影像的代名词。</p>
+    <p>作为白丝<strong>官方网站</strong>，我们在这里集中呈现品牌自制的精品内容、签约创作者的作品以及社区共同参与的企划。官网不只是作品陈列架，它同时承担信息发布、投稿入口、合作对接与口碑展示的职责。用户在这里可以看到每一条内容的生产背景、作者信息与真实反馈，而不是被算法推着走。我们相信，一家持续运营的视频品牌必须对自己的每一帧画面负责，也必须对社区里的每一次表达保持耐心。</p>
+
+    <h3>二、内容方法：真实优先，技术为真实服务</h3>
+    <p>白丝的内容方法论可以概括为「三真」：真实场景、真实人物、真实时间。拍摄前我们很少写完整台本，而是先做长时间的观察记录，再决定机位和剪辑节奏。以人物访谈为例，白丝要求创作者在正式开拍前至少与拍摄对象相处两天，完成一次不带机器的聊天；以日常记录为例，我们鼓励用固定机位连续拍摄，让画面自然生长出情绪，而不是靠配乐强行煽情。教程类内容则强调可复现：每一个参数、每一次失败都会被写进视频说明，观众照着做能得到接近的结果，这也是白丝视频在社区里获得高收藏率的原因。</p>
+    <p>技术层面，白丝建立了从 4K 采集、双备份存储到统一色彩管理的制作规范。我们要求所有官方发布内容至少达到 1080P 高清标准，重点企划统一采用 4K 输出；声音部分则坚持现场同期声优先，必要补录时也保留环境底噪，避免过度干净带来的失真。白丝影像学院把这些规范整理成公开课程，免费提供给社区创作者，希望以专业能力反哺内容生态，而不是把技术当作门槛。</p>
+
+    <h3>三、社区运营：让创作者被看见，让观众被尊重</h3>
+    <p>白丝的创作者体系分为签约创作者、合作创作者与新人创作者三层。签约创作者参与官方企划并获得稳定制作支持；合作创作者按专题投稿，通过审核后进入内容池；新人创作者则可以通过「白丝新声」计划获得一次完整的作品诊断与首页曝光机会。我们不做唯流量排序，而是结合完播、收藏、评论质量与人工评审形成综合推荐。每季度白丝会公布一次创作者成长报告，公开推荐逻辑与数据口径，让规则本身成为社区信任的一部分。</p>
+    <p>对观众，白丝坚持「用户至上」但不迎合。评论区设有分级引导，鼓励具体、有信息量的讨论，反对空泛吹捧与人身攻击；口碑评分系统 2.0 引入多维度评价，把内容质量、信息价值与观看体验分开打分，避免一条情绪化短评左右整体判断。我们相信，一个健康的视频社区不是没有分歧，而是分歧能被理性表达。白丝的运营团队会定期整理用户建议，形成公开的更新日志，把「持续运营」落实为可查证的动作。</p>
+
+    <h3>四、社会责任与长期主义：影像之外的事</h3>
+    <p>白丝长期关注影像教育与社会记录。我们与多所高校的传媒社团保持合作，提供设备借用与拍摄指导；每年举办一届「白丝影像挑战」，设置纪录、短片与手机影像三个赛道，报名与上传全部在官网完成，评审过程公开直播。对于涉及未成年人、老人与特殊群体的题材，白丝制定了明确的拍摄伦理守则：必须取得可撤回的知情同意，必须避免消费苦难，必须为被拍摄者提供成片预览。这些规则看似增加了制作成本，却让我们在多年运营中保持了稳定的口碑。</p>
+    <p>从商业角度看，白丝同样坚持长期主义。我们与品牌方的合作以内容共创为主，拒绝破坏观看体验的硬性植入；合作项目会在页面显著位置标注合作属性，让观众清楚知道自己在看什么。正因如此，白丝才能在内容数量快速增长的环境里保持品质，也才能让「值得信赖」不只是一句口号。未来，白丝会继续深耕真实生活影像这一垂直领域，完善创作者工具、优化社区体验，并用更多元的题材与更包容的视角，记录这个时代普通人的力量与温暖。</p>
+
+    <div class="bs-read-highlight">
+      白丝相信：一条好的影像，不一定要宏大，但一定要诚实。我们愿意用十年时间，把这句话做成一个可以被反复验证的品牌承诺。
+    </div>
+  </div>
+</section>
+
+<!-- ================= S4 专题企划 ================= -->
+<section class="bs-section" id="bsTopics" aria-labelledby="bsTopicsTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsTopicsTitle">专题企划 <span>· 白丝长期项目</span></h2>
+        <p class="bs-section-sub">四个正在进行的品牌企划，覆盖城市、手艺、阅读与户外。每个企划都由官方发起、社区共建，欢迎创作者报名参与。</p>
+      </div>
+      <a class="bs-section-link" href="#bsFaq">投稿与报名规则 ›</a>
+    </div>
+
+    <div class="bs-topic-grid">
+      <article class="bs-topic-card">
+        <div class="bs-topic-figure">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 245'%3E%3Crect width='560' height='245' fill='%232b3550'/%3E%3Ccircle cx='452' cy='58' r='34' fill='%23e8a04c'/%3E%3Cpath d='M0 190 L92 128 L176 166 L268 108 L360 156 L450 118 L560 168 L560 245 L0 245 Z' fill='%231d2433'/%3E%3Crect x='34' y='30' width='112' height='12' rx='6' fill='%23e8eef7' opacity='.7'/%3E%3Crect x='34' y='56' width='74' height='10' rx='5' fill='%23e8eef7' opacity='.4'/%3E%3C/svg%3E" alt="专题《一日之丝》配图：深蓝夜空与城市天际线剪影" width="560" height="245">
+        </div>
+        <div class="bs-topic-top">
+          <h3>一日之丝</h3>
+          <span class="bs-topic-status">更新至第 6 集</span>
+        </div>
+        <p>用一整天跟拍一个普通人，不设旁白、不做干预，只保留时间本身的重量。白丝年度重点企划。</p>
+        <ul class="bs-topic-items">
+          <li><b>01</b>第 6 集：把傍晚留给一条无人的老街</li>
+          <li><b>02</b>第 5 集：修表匠的午休只有二十分钟</li>
+          <li><b>03</b>第 4 集：跟着环卫车走过整座城</li>
+        </ul>
+      </article>
+
+      <article class="bs-topic-card">
+        <div class="bs-topic-figure">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 245'%3E%3Crect width='560' height='245' fill='%23fdf2e3'/%3E%3Crect x='60' y='54' width='160' height='140' rx='8' fill='%23e8a04c' opacity='.55'/%3E%3Crect x='240' y='80' width='120' height='114' rx='8' fill='%232b3550' opacity='.75'/%3E%3Crect x='380' y='40' width='120' height='154' rx='8' fill='%233b4d76' opacity='.45'/%3E%3Cpath d='M60 54 L140 24 L220 54' fill='none' stroke='%232b3550' stroke-width='4'/%3E%3C/svg%3E" alt="专题《手上的功夫》配图：米白底色上的三块错落色块与折线" width="560" height="245">
+        </div>
+        <div class="bs-topic-top">
+          <h3>手上的功夫</h3>
+          <span class="bs-topic-status">更新中</span>
+        </div>
+        <p>寻找仍在坚持手工的匠人，记录技艺细节与时间成本。每集附一份可下载的工具清单。</p>
+        <ul class="bs-topic-items">
+          <li><b>01</b>手工皮鞋：一双鞋要走 30 道工序</li>
+          <li><b>02</b>竹编盏：把 0.8 毫米的篾条编进光里</li>
+          <li><b>03</b>活字印刷：铅字退回字架的夜晚</li>
+        </ul>
+      </article>
+
+      <article class="bs-topic-card">
+        <div class="bs-topic-top">
+          <h3>深夜书房</h3>
+          <span class="bs-topic-status done">第 1 季完结</span>
+        </div>
+        <p>一档低刺激的阅读陪伴影像。固定机位、不加速、不加音乐，只在整点报时，适合当作背景播放。</p>
+        <ul class="bs-topic-items">
+          <li><b>01</b>Vol.09：读到一半被合上的那本书</li>
+          <li><b>02</b>Vol.08：在旧书店待到打烊</li>
+          <li><b>03</b>Vol.07：给书架重新排一次序</li>
+        </ul>
+      </article>
+
+      <article class="bs-topic-card">
+        <div class="bs-topic-top">
+          <h3>去山里住两天</h3>
+          <span class="bs-topic-status">报名开放</span>
+        </div>
+        <p>户外影像共创计划，每期邀请 6 位创作者同行，共同完成一支短片。交通与设备由白丝提供支持。</p>
+        <ul class="bs-topic-items">
+          <li><b>01</b>第一期：溪边扎营与 48 小时无信号</li>
+          <li><b>02</b>第二期：秋雨后上山，拍雾的移动</li>
+          <li><b>03</b>第三期：山顶日出失败，但我们留下了过程</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S5 创作者矩阵（双列简介） ================= -->
+<section class="bs-section alt" id="bsAuthors" aria-labelledby="bsAuthorsTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsAuthorsTitle">创作者矩阵 <span>· 白丝社区的中坚力量</span></h2>
+        <p class="bs-section-sub">他们来自不同城市与专业背景，共同点是愿意为一条画面反复打磨。点击卡片可查看作者详情。</p>
+      </div>
+      <a class="bs-section-link" href="#bsFaq">申请成为创作者 ›</a>
+    </div>
+
+    <div class="bs-author-grid">
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#d98f3a,#f0bd7a)">麦</div>
+        <div class="bs-author-info">
+          <h3>麦野 <span class="bs-author-field">人物访谈</span></h3>
+          <p>白丝签约创作者，前报社摄影记者。擅长用长镜头与同期声记录手艺人与小店主，作品节奏克制、信息密度高，《面粉与晨光》为其代表作。</p>
+          <div class="bs-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>24.6 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="麦野">查看作者主页 ›</a>
+        </div>
+      </article>
+
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#3b4d76,#6f86b3)">镜</div>
+        <div class="bs-author-info">
+          <h3>镜台笔记 <span class="bs-author-field">教程干货</span></h3>
+          <p>影像教学组合，两人均出身影视后期。课程以可复现著称，每个参数都配实拍对照，白丝影像学院主讲团队，累计课程播放超 600 万。</p>
+          <div class="bs-author-nums"><span>作品 <b>132</b></span><span>粉丝 <b>41.2 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="镜台笔记">查看作者主页 ›</a>
+        </div>
+      </article>
+
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#4f8a72,#8cc0a7)">林</div>
+        <div class="bs-author-info">
+          <h3>林间放映室 <span class="bs-author-field">户外与自然</span></h3>
+          <p>独立纪录片作者，常年在山野与海岸线之间拍摄。坚持轻装出行、不做摆拍，擅长用环境声构建空间感，白丝户外企划长期合作者。</p>
+          <div class="bs-author-nums"><span>作品 <b>58</b></span><span>粉丝 <b>18.9 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="林间放映室">查看作者主页 ›</a>
+        </div>
+      </article>
+
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#8a5b8f,#c593c9)">针</div>
+        <div class="bs-author-info">
+          <h3>针脚与线 <span class="bs-author-field">手作 DIY</span></h3>
+          <p>服装设计专业出身，专注旧衣改造与零基础缝纫教学。视频里会保留失败镜头与返工过程，被社区称为「最不藏私的手作博主」。</p>
+          <div class="bs-author-nums"><span>作品 <b>74</b></span><span>粉丝 <b>15.4 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="针脚与线">查看作者主页 ›</a>
+        </div>
+      </article>
+
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#2b3550,#5c719b)">城</div>
+        <div class="bs-author-info">
+          <h3>城市慢行记 <span class="bs-author-field">城市探索</span></h3>
+          <p>由三位城市规划师组成的创作小组，专注步行视角下的街区观察。作品常配手绘路线图，白丝「城市漫游」系列核心团队。</p>
+          <div class="bs-author-nums"><span>作品 <b>42</b></span><span>粉丝 <b>12.7 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="城市慢行记">查看作者主页 ›</a>
+        </div>
+      </article>
+
+      <article class="bs-author-card">
+        <div class="bs-avatar" style="background:linear-gradient(140deg,#c06b5a,#e8a04c)">晚</div>
+        <div class="bs-author-info">
+          <h3>晚饭电台 <span class="bs-author-field">美食与日常</span></h3>
+          <p>以「一个人也要好好吃饭」为口号，记录下班后的厨房。视频多为固定机位实拍，食谱步骤写在简介里，收藏率长期居白丝前列。</p>
+          <div class="bs-author-nums"><span>作品 <b>97</b></span><span>粉丝 <b>29.3 万</b></span></div>
+          <a class="bs-author-link" href="#bsAuthors" data-author="晚饭电台">查看作者主页 ›</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S6 社区口碑（双列短评） ================= -->
+<section class="bs-section" id="bsReviews" aria-labelledby="bsReviewsTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsReviewsTitle">社区口碑 <span>· 来自真实观众与创作者</span></h2>
+        <p class="bs-section-sub">白丝口碑评分系统 2.0 将内容质量、信息价值与观看体验分开评价。以下评论来自官网与社区，未做筛选性删改。</p>
+      </div>
+      <a class="bs-section-link" href="#bsFaq">评分规则说明 ›</a>
+    </div>
+
+    <div class="bs-review-grid">
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#3b4d76">陈</span>
+          <span class="bs-review-name">陈默</span>
+          <span class="bs-review-stars">★★★★★</span>
+        </div>
+        <p>看了《一日之丝》第 6 集，第一次意识到一条老街的傍晚原来有这么多层次。没有配乐轰炸，也没有刻意煽情，但我看完以后去楼下走了一圈。这种克制很难得。</p>
+        <div class="bs-review-tag">评价维度：观看体验</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#4f8a72">许</span>
+          <span class="bs-review-name">许一舟</span>
+          <span class="bs-review-stars">★★★★☆</span>
+        </div>
+        <p>教程类内容是真的能照着做。构图三问那期我暂停了十几次记笔记，参数都写在画面里。扣一星是因为有些课程建议先看前置，但页面上顺序标得不够明显。</p>
+        <div class="bs-review-tag">评价维度：信息价值</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#d98f3a">阿</span>
+          <span class="bs-review-name">阿柚</span>
+          <span class="bs-review-stars">★★★★★</span>
+        </div>
+        <p>作为新人创作者，投稿后第三天就收到了白丝编辑的详细反馈，连封面字体的建议都写了。这个时代还有人愿意认真写反馈，挺感动的。</p>
+        <div class="bs-review-tag">评价维度：创作者支持</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#8a5b8f">彭</span>
+          <span class="bs-review-name">彭小满</span>
+          <span class="bs-review-stars">★★★★☆</span>
+        </div>
+        <p>《深夜书房》系列是我的睡前固定节目。画面稳定、声音干净，适合放着做事。唯一希望的是能有个定时关闭，有时候忘了关就一直播到天亮。</p>
+        <div class="bs-review-tag">评价维度：使用场景</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#3b4d76">陆</span>
+          <span class="bs-review-name">陆知远</span>
+          <span class="bs-review-stars">★★★★★</span>
+        </div>
+        <p>合作方视角说一句：白丝的内容共创流程很规范，拍摄前会明确边界和署名方式，成片审核也讲道理。项目结束后还有复盘文档，这在视频行业并不多见。</p>
+        <div class="bs-review-tag">评价维度：合作体验</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#c06b5a">周</span>
+          <span class="bs-review-name">周予安</span>
+          <span class="bs-review-stars">★★★★☆</span>
+        </div>
+        <p>手作教程的失败镜头保留得很好，至少让我知道不是自己手笨。希望以后能多一些工具平替方案，毕竟有些设备对学生党还是有点贵。</p>
+        <div class="bs-review-tag">评价维度：内容实用性</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#2b3550">何</span>
+          <span class="bs-review-name">何夕</span>
+          <span class="bs-review-stars">★★★★★</span>
+        </div>
+        <p>首页推荐不追热点，这点我很喜欢。有时候只是想安安静静看一条 20 分钟的片子，不想被塞一堆情绪化的短视频。白丝算是少数还愿意做长内容的平台。</p>
+        <div class="bs-review-tag">评价维度：内容质量</div>
+      </article>
+
+      <article class="bs-review">
+        <div class="bs-review-head">
+          <span class="bs-mini-ava" style="background:#4f8a72">崔</span>
+          <span class="bs-review-name">崔小川</span>
+          <span class="bs-review-stars">★★★★☆</span>
+        </div>
+        <p>投稿弹窗填起来很顺，附件上传速度也稳定。建议加一个草稿保存功能，有一次写了一半关掉页面，内容就没了，希望能改进。</p>
+        <div class="bs-review-tag">评价维度：功能体验</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S7 企业动态 + 合作品牌 ================= -->
+<section class="bs-section alt" id="bsNews" aria-labelledby="bsNewsTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsNewsTitle">企业动态 <span>· 官方发布</span></h2>
+        <p class="bs-section-sub">白丝的每一次更新都会在这里公开。内容更新、产品功能、合作进展与社区规则调整，均可追溯。</p>
+      </div>
+      <a class="bs-section-link" href="#bsFaq">订阅更新提醒 ›</a>
+    </div>
+
+    <div class="bs-duo">
+      <ul class="bs-news">
+        <li>
+          <time>2026.11.18</time>
+          <div>
+            <h3>《一日之丝》第 6 集上线，新增双机位同步版本</h3>
+            <p>本集同步提供 4K 主版本与双机位分屏版本，观众可在播放器内切换视角，感受同一空间的两种观看方式。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026.11.12</time>
+          <div>
+            <h3>白丝签约创作者新增 12 位，覆盖手作、户外与城市观察</h3>
+            <p>本季度签约评审共收到 318 份申请，最终入选 12 位。完整名单与评审说明已在创作者页面公开。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026.11.05</time>
+          <div>
+            <h3>社区口碑评分系统 2.0 正式上线</h3>
+            <p>新系统将评价拆分为内容质量、信息价值与观看体验三项，并引入防刷分机制。历史评分已按新口径重新计算。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026.10.28</time>
+          <div>
+            <h3>「去山里住两天」第二期报名截止，第三期开放预约</h3>
+            <p>第二期共 214 位创作者报名，最终 6 位入选。第三期将扩展至海岸线题材，报名入口在官网投稿页面。</p>
+          </div>
+        </li>
+        <li>
+          <time>2026.10.15</time>
+          <div>
+            <h3>白丝影像学院免费公开课更新至 18 讲</h3>
+            <p>新增声音设计与色彩管理两讲，配套素材包可在课程页下载，全部内容永久免费。</p>
+          </div>
+        </li>
+      </ul>
+
+      <div>
+        <h3 style="font-size:18px;margin-bottom:6px">合作品牌与伙伴</h3>
+        <p style="font-size:13px;color:var(--bs-ink-soft);margin-bottom:18px">白丝与价值观相近的机构长期合作，共同推动真实影像的创作与传播。</p>
+        <div class="bs-partner-wall">
+          <div class="bs-partner">山行户外<small>装备与安全支持</small></div>
+          <div class="bs-partner">纸间书店<small>线下放映场地</small></div>
+          <div class="bs-partner">慢工手作<small>匠人企划共建</small></div>
+          <div class="bs-partner">明野影像器材<small>设备与技术协作</small></div>
+          <div class="bs-partner">城南社区文化中心<small>公益纪录项目</small></div>
+          <div class="bs-partner">见山咖啡<small>创作者沙龙</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S7 FAQ ================= -->
+<section class="bs-section" id="bsFaq" aria-labelledby="bsFaqTitle">
+  <div class="bs-wrap">
+    <div class="bs-section-head">
+      <div>
+        <h2 id="bsFaqTitle">帮助中心 <span>· 常见问题</span></h2>
+        <p class="bs-section-sub">关于观看、投稿、合作与版权的常见问题。如果没有找到答案，可以通过页面底部的联系方式与我们沟通。</p>
+      </div>
+      <a class="bs-section-link" href="#bsFooter">联系白丝 ›</a>
+    </div>
+
+    <div class="bs-faq">
+      <details>
+        <summary>白丝的内容都可以免费观看吗？</summary>
+        <p>白丝官方网站上的绝大多数原创内容可免费观看，且提供 1080P 与 4K 高清版本切换。部分与品牌共创的企划内容可能包含合作标识，但不会因此影响观看，也不存在需要额外付费解锁的遮蔽。</p>
+      </details>
+      <details>
+        <summary>我想投稿自己的影像作品，需要满足什么条件？</summary>
+        <p>作品需为原创或拥有完整授权，时长不限，画质建议 1080P 以上。投稿时请附上创作说明与拍摄背景，方便编辑评估。涉及他人肖像、未成年人或敏感场景的作品，需额外提供知情同意说明。</p>
+      </details>
+      <details>
+        <summary>如何申请成为白丝签约创作者？</summary>
+        <p>先在官网注册创作者账号并完成 3 条以上作品投稿，编辑会在评审周期内主动联系合适人选。签约评审每季度一次，评审标准包括内容完成度、表达独特性与长期更新意愿。</p>
+      </details>
+      <details>
+        <summary>白丝对转载和二次创作是什么态度？</summary>
+        <p>白丝鼓励合理引用与二次创作，但需注明来源并保留原作者信息。用于商业用途的二次创作须提前取得书面授权。对恶意搬运与去水印传播，我们会通过平台投诉渠道处理。</p>
+      </details>
+      <details>
+        <summary>品牌合作如何联系？合作内容会被标注吗？</summary>
+        <p>可通过页面底部的合作邮箱提交需求。白丝坚持内容共创原则，拒绝影响观看体验的硬性植入。所有商业合作内容都会在页面显著位置标注合作关系，观众可清楚识别。</p>
+      </details>
+      <details>
+        <summary>为什么有些视频没有配乐？</summary>
+        <p>白丝部分治愈影像与纪录类作品刻意保留现场同期声，不使用配乐，以呈现更真实的空间感。这是内容选择而非制作缺漏，相关说明通常会写在作品简介中。</p>
+      </details>
+      <details>
+        <summary>口碑评分是如何计算的？</summary>
+        <p>评分由内容质量、信息价值与观看体验三项加权构成，并剔除以异常频率产生的评价。评分每周更新一次，单个用户的多次评价会做去重处理，具体规则可在评分说明页查看。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= S8 页脚 ================= -->
+<footer class="bs-footer" id="bsFooter">
+  <div class="bs-wrap">
+    <div class="bs-footer-grid">
+      <div>
+        <div class="bs-footer-brand">
+          <span class="bs-brand-mark">丝</span>
+          <b>白丝</b>
+        </div>
+        <p>白丝官方网站 · 持续运营中。我们专注真实生活影像与治愈系原创内容，以匠心打磨每一帧画面，为创作者与企业搭建高品质内容生态。品牌深耕影像垂直领域，坚持用户至上、内容为真。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#bsFocus">焦点推荐</a></li>
+          <li><a href="#bsVideos">影像精选</a></li>
+          <li><a href="#bsTopics">专题企划</a></li>
+          <li><a href="#bsAbout">品牌理念</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与帮助</h4>
+        <ul>
+          <li><a href="#bsAuthors">创作者矩阵</a></li>
+          <li><a href="#bsReviews">社区口碑</a></li>
+          <li><a href="#bsNews">企业动态</a></li>
+          <li><a href="#bsFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：brand@whitesilk.example</li>
+          <li>投稿邮箱：create@whitesilk.example</li>
+          <li>工作时间：周一至周五 10:00–19:00</li>
+        </ul>
+        <div class="bs-share-row" style="margin-top:14px">
+          <button type="button" class="bs-share-trigger">分享官网</button>
+          <button type="button" class="bs-submit-trigger">我要投稿</button>
+        </div>
+      </div>
+    </div>
+    <div class="bs-footer-bottom">
+      <span>© 2026 白丝 Whitesilk · 官方网站 · 版权所有</span>
+      <span>持续运营中 · 原创正版内容 · 备案号：待备案</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= toast / modal ================= -->
+<div class="bs-toast" id="bsToast" role="status" aria-live="polite"></div>
+
+<div class="bs-modal-mask" id="bsModalMask" role="dialog" aria-modal="true" aria-labelledby="bsModalTitle">
+  <div class="bs-modal">
+    <button class="bs-modal-close" id="bsModalClose" aria-label="关闭弹窗">×</button>
+    <div id="bsModalBody"></div>
+  </div>
+</div>
+
+<button class="bs-top-btn" id="bsTopBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- helpers ---------- */
+  var toastEl = document.getElementById("bsToast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("show"); }, 2200);
+  }
+
+  var mask = document.getElementById("bsModalMask");
+  var body = document.getElementById("bsModalBody");
+  function openModal(html){
+    body.innerHTML = html;
+    mask.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    mask.classList.remove("show");
+    body.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+  document.getElementById("bsModalClose").addEventListener("click", closeModal);
+  mask.addEventListener("click", function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  /* ---------- mobile nav ---------- */
+  var menuBtn = document.getElementById("bsMenuBtn");
+  var mobileNav = document.getElementById("bsMobileNav");
+  menuBtn.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  Array.prototype.forEach.call(mobileNav.querySelectorAll("a"), function(a){
+    a.addEventListener("click", function(){
+      mobileNav.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  /* ---------- search feedback ---------- */
+  var searchForm = document.getElementById("bsSearchForm");
+  var searchInput = document.getElementById("bsSearchInput");
+  var searchTip = document.getElementById("bsSearchTip");
+  var searchIndex = [
+    "一日之丝 第6集 老街",
+    "凌晨四点的面包房 麦野",
+    "构图三问 影像学院",
+    "去山里住两天 户外企划",
+    "深夜书房 治愈影像",
+    "针脚与线 旧衣改造",
+    "城市慢行记 公交线",
+    "晚饭电台 一人食"
+  ];
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchTip.innerHTML = "试试搜索：人物访谈、教程、户外、手作、深夜书房";
+      searchTip.classList.add("show");
+      return;
+    }
+    var hits = searchIndex.filter(function(item){ return item.indexOf(q) !== -1; });
+    if(hits.length){
+      searchTip.innerHTML = "找到 " + hits.length + " 条相关影像：<br>" + hits.slice(0,4).join("<br>");
+    }else{
+      searchTip.innerHTML = "暂未找到「" + q + "」的直接结果，已为你推荐：<br>白丝焦点 · 情绪疗愈影像精选";
+    }
+    searchTip.classList.add("show");
+    toast("已为你检索「" + q + "」");
+  }
+  searchForm.addEventListener("submit", function(e){ e.preventDefault(); doSearch(); });
+  searchInput.addEventListener("input", function(){
+    if(!searchInput.value.trim()){ searchTip.classList.remove("show"); }
+  });
+  document.addEventListener("click", function(e){
+    if(!searchForm.contains(e.target)) searchTip.classList.remove("show");
+  });
+
+  /* ---------- like / save ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".bs-like-btn"), function(btn){
+    btn.addEventListener("click", function(){
+      var span = btn.querySelector("span");
+      var base = parseInt(btn.getAttribute("data-count"), 10);
+      var liked = btn.classList.toggle("liked");
+      span.textContent = liked ? (base + 1) : base;
+      toast(liked ? "已点赞，感谢你的支持" : "已取消点赞");
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".bs-save-btn"), function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("saved");
+      btn.innerHTML = saved ? "★ 已收藏" : "☆ 收藏";
+      toast(saved ? "已加入收藏，可在个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- author modal ---------- */
+  var authorInfo = {
+    "麦野": {f:"人物访谈 · 纪录", w:"86", fans:"24.6 万", d:"前报社摄影记者，现为白丝签约创作者。习惯用长镜头等待人物自然进入状态，作品节奏克制、细节密集。代表作《面粉与晨光》系列累计播放超过 300 万，长期参与白丝匠人企划。"},
+    "镜台笔记": {f:"教程干货 · 后期", w:"132", fans:"41.2 万", d:"两人影像教学组合，均出身影视后期。课程以可复现著称，每个参数都配实拍对照。白丝影像学院主讲团队，累计课程播放超 600 万，被社区称为「不会藏私的老师」。"},
+    "林间放映室": {f:"户外 · 自然纪录", w:"58", fans:"18.9 万", d:"独立纪录片作者，常年行走于山野与海岸线。坚持轻装出行、不做摆拍，擅长用环境声构建空间感。白丝「去山里住两天」企划长期合作者，主张记录过程而非结果。"},
+    "针脚与线": {f:"手作 DIY · 缝纫", w:"74", fans:"15.4 万", d:"服装设计专业出身，专注旧衣改造与零基础缝纫教学。视频保留失败镜头与返工过程，附完整裁片图与参数。被社区称为「最不藏私的手作博主」。"},
+    "城市慢行记": {f:"城市探索 · 街区观察", w:"42", fans:"12.7 万", d:"由三位城市规划师组成的创作小组，专注步行视角下的街区观察。作品常配手绘路线图与在地访谈，是白丝「城市漫游」系列核心团队，主张用脚步丈量城市。"},
+    "晚饭电台": {f:"美食 · 日常记录", w:"97", fans:"29.3 万", d:"以「一个人也要好好吃饭」为口号，记录下班后的厨房。视频多为固定机位实拍，食谱步骤写在简介里。收藏率长期居白丝前列，被观众称为「最下饭的创作者」。"}
+  };
+  Array.prototype.forEach.call(document.querySelectorAll("[data-author]"), function(link){
+    link.addEventListener("click", function(e){
+      e.preventDefault();
+      var name = link.getAttribute("data-author");
+      var info = authorInfo[name];
+      if(!info) return;
+      openModal(
+        '<h3 id="bsModalTitle">' + name + '</h3>' +
+        '<p><strong>擅长领域：</strong>' + info.f + '　<strong>作品：</strong>' + info.w + '　<strong>粉丝：</strong>' + info.fans + '</p>' +
+        '<p>' + info.d + '</p>' +
+        '<p style="font-size:13px;color:#8994a8">该创作者已通过白丝官方认证，作品均为原创正版，欢迎在影像精选页查看其最新内容。</p>'
+      );
+    });
+  });
+
+  /* ---------- share modal ---------- */
+  function shareModal(){
+    openModal(
+      '<h3 id="bsModalTitle">分享白丝官网</h3>' +
+      '<p>把这份真实影像的力量，分享给同样喜欢慢内容的朋友。</p>' +
+      '<div class="bs-share-row">' +
+        '<button type="button" data-share="wechat">微信</button>' +
+        '<button type="button" data-share="weibo">微博</button>' +
+        '<button type="button" data-share="qq">QQ</button>' +
+        '<button type="button" data-share="copy">复制链接</button>' +
+      '</div>'
+    );
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".bs-share-trigger"), function(btn){
+    btn.addEventListener("click", shareModal);
+  });
+  body.addEventListener("click", function(e){
+    var t = e.target.closest("[data-share]");
+    if(!t) return;
+    var type = t.getAttribute("data-share");
+    if(type === "copy"){
+      var link = "https://whitesilk.example/";
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("链接已复制，可直接粘贴分享");
+        }).catch(function(){
+          toast("复制失败，请手动复制页面地址");
+        });
+      }else{
+        toast("当前环境不支持自动复制，请手动分享");
+      }
+      return;
+    }
+    var map = {wechat:"微信", weibo:"微博", qq:"QQ"};
+    closeModal();
+    toast("已生成" + map[type] + "分享卡片，请到对应应用粘贴");
+  });
+
+  /* ---------- submit modal ---------- */
+  function submitModal(){
+    openModal(
+      '<h3 id="bsModalTitle">向白丝投稿</h3>' +
+      '<p>我们长期征集真实生活影像。提交后 5 个工作日内，编辑会通过邮箱回复评估意见。</p>' +
+      '<div class="bs-field"><label for="bsSubName">创作者昵称</label><input id="bsSubName" type="text" placeholder="例如：麦野"></div>' +
+      '<div class="bs-field"><label for="bsSubMail">联系邮箱</label><input id="bsSubMail" type="email" placeholder="用于接收反馈"></div>' +
+      '<div class="bs-field"><label for="bsSubDesc">作品简介</label><textarea id="bsSubDesc" rows="4" placeholder="题材、时长、拍摄方式，以及你想表达什么"></textarea></div>' +
+      '<div class="bs-share-row"><button type="button" id="bsSubSend" style="background:#2b3550;color:#fff">提交投稿</button></div>'
+    );
+    document.getElementById("bsSubSend").addEventListener("click", function(){
+      var name = document.getElementById("bsSubName").value.trim();
+      var mail = document.getElementById("bsSubMail").value.trim();
+      var desc = document.getElementById("bsSubDesc").value.trim();
+      if(!name || !mail || !desc){
+        toast("请完整填写昵称、邮箱与作品简介");
+        return;
+      }
+      if(mail.indexOf("@") === -1){
+        toast("邮箱格式似乎不太对，请检查");
+        return;
+      }
+      closeModal();
+      toast("投稿已提交，感谢你为白丝内容生态添砖加瓦");
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".bs-submit-trigger"), function(btn){
+    btn.addEventListener("click", submitModal);
+  });
+
+  /* ---------- back to top ---------- */
+  var topBtn = document.getElementById("bsTopBtn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 480){ topBtn.classList.add("show"); }
+    else{ topBtn.classList.remove("show"); }
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ---------- notice marquee (gentle) ---------- */
+  var track = document.getElementById("bsNoticeTrack");
+  var noticeText = track.textContent;
+  var noticeOffset = 0;
+  if(window.innerWidth > 820 && noticeText.length > 34){
+    setInterval(function(){
+      noticeOffset = (noticeOffset + 1) % (noticeText.length + 30);
+      track.textContent = noticeText.slice(noticeOffset) + (noticeOffset > 0 ? "　　" : "") + noticeText.slice(0, noticeOffset);
+    }, 260);
+  }
+})();
+</script>
+</body>
+  </html>
